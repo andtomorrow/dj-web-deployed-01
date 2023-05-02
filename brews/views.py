@@ -1,3 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from . import views
 
-# Create your views here.
+
+def index(request):
+    return render(request, 'brews/index.html')
